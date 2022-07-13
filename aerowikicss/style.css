@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Roboto&display=swap');
+body
+{
+	background-color: #CCDFF9;
+}
+*
+{
+	margin: 0;
+}
+h1
+{
+	color: darkblue;
+	font: 2rem Nunito, sans-serif;
+}
+h2
+{
+	color: darkblue;
+	font: 1.5rem Nunito, sans-serif;
+	text-align: left;
+}
+h3
+{
+	color: darkblue;
+	font: 1.5rem Nunito, sans-serif;
+	text-align: left;
+}
+h4
+{
+	color: darkblue;
+	font: 1.5rem Nunito, sans-serif;
+	text-align: left;
+}
+header
+{
+	background-color: #03A9F4;
+}
+#img0
+{
+	width: 100%;
+	height: 450px; 
+}
+nav
+{
+	background-color: #03A9F4;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.class1:link, .class1:visited 
+{
+	background-color: #CCDFF9;
+	color: black;
+	border: 2px solid darkblue;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.class1:hover, .class1:active
+{
+	background-color: darkblue;
+	color: #D2E3FA;
+	font-weight: bold;
+}
+article
+{
+	width: 100%;
+	text-align: justify-all;
+	padding: 20px 50px;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+}
+#sec1
+{
+	background-color: #03A9F4;
+	width: 100%;
+	text-align: justify-all;
+	padding: 20px 50px;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+}
+ul
+{
+	list-style-type: circle;
+}
+
+#sec2
+{
+	width: 100%;
+	text-align: justify-all;
+	padding: 20px 50px;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+}
+#container1
+{
+	display: flex;
+}
+#h21
+{
+	color: darkblue;
+	font: 1.5rem Nunito, sans-serif;
+	text-align: center;
+}
+#p1
+{
+	width: 100%;
+	text-align: center;
+	padding: 20px 50px;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+}
+.card
+{
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgb(159, 181, 183);
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #b7c8e0;
+}
+.card:hover
+{
+	width: 50%;
+  box-shadow: 0 4px 8px 0 rgb(143, 162, 164);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #b7c8e0;
+}
+.img3
+{
+  width: 100%;
+}
+.class2:link, .class2:visited
+{
+	text-decoration: none;
+	color: black;
+}
+.class2:hover, .class2:active
+{
+	font-weight: bolder;
+}
+#sec3
+{
+	width: 100%;
+	text-align: justify-all;
+	padding: 20px 50px;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+}
+.container2
+{
+	display: flex;
+}
+.card2
+{
+	width: 50%;
+}
+video
+{
+	width: 100%;
+}
+img.img1
+{
+	width: 30px;
+}
+footer
+{
+	background-color: #777;
+	width: 100%;
+	text-align: center;
+	padding: 20px 50px;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+}
+/* from here begins the formatting of the search page - a partir daqui começa a formatação da página de busca */
+.searchpage
+{
+	width: 600px;
+	margin: 0 auto;
+}
+input, textarea, select
+{
+	width: 100%;
+	height: 35px;
+	margin-bottom: 15px;
+	padding-left: 7px;
+	box-sizing: border-box;
+	border: 1px solid darkblue;
+}
+.pform
+{
+	margin-bottom: 10px;
+}
+fieldset
+{
+	margin-bottom: 10px;
+	display: inline-grid;
+	width: 100%;
+}
+textarea
+{
+	height: 80px;
+}
+input[type="radio"], input[type="checkbox"]
+{
+	height: 15px;
+	width: 15px;
+	padding: 10px;
+}
+#date-hour-num-form
+{
+	display: flex;
+}
+.divdhn
+{
+	padding: 5px;
+}
+.buttons
+{
+	display: flex;
+}
+#search
+{
+	margin: 0;
+}
+input[type="submit"], input[type="reset"]
+{
+	margin: 20px;
+	font-weight: bolder;
+}
+input[type="submit"]
+{
+	background-color: darkblue;
+	color: white;
+}

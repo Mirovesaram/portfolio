@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="comércio, mercado, andreza, ceilândia, ceilândia sul, pizza, carne, leite, ovos, batata, frutas, alface, queijo, requeijão, iogurte, pão">
+	<meta name="author" content="MiroMiro">
+	<meta name="description" content="O comércio da dona e do dono de casa. Referência em Ceilândia Sul, fazemos entregas e temos os melhores preços da região. Além disso, produzimos e entregamos pizzas caseiras congeladas.">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Mercado Andreza</title>
+</head>
+<body>
+	<nav>
+		<div id="divnav">
+			<a class="nav" href="#">HOME</a>
+			<a class="nav" href="#about">SOBRE</a>
+			<a class="nav" href="#product">PRODUTOS</a>
+			<a class="nav" href="#ord">ENCOMENDAS</a>
+		</div>
+	</nav>
+	<header id="about">
+		<img src="img/ma.png" alt="Banner do mercado Andreza que contém as seguintes informações: Fechamos somente aos domingos
+		Abrimos às 8:00 e fechamos às 20:00; Endereço: 48, Conjunto M Quadra QNM 3 - Ceilândia sul; Telefone: 61 3581 2155" width="100%">
+	</header>
+	<main>
+		<h1>
+			Mercado Andreza
+		</h1>
+		<p>
+			<justify>
+				Somos um comércio referência da região presente há mais de 30 anos. Trabalhando na disposição dos mais diversos produtos (Carnes, hortifruti, toda parte alimentícia e limpeza) e com a melhor pizza caseira congelada de Ceilândia Sul! Além de um ótimo atendimento e com bons preços na medida do possível. Aceitamos débito, crédito e alimentação (exceto sodexo).
+			<justify/>
+		</p>
+		<p>
+			<justify>
+				Veja algumas reviews disponíveis no <a target="_blank" href="https://www.google.com.br/maps/place/Mercado+Andreza/@-15.8240867,-48.1042848,19.47z/data=!4m7!3m6!1s0x935bcce612c66fdb:0x27032cfd18d15b37!8m2!3d-15.8240011!4d-48.1044809!9m1!1b1">google maps</a>:
+				"Produtos e preços muito acessíveis. Muitas promoções todos os dias. Ambiente organizado e limpo. Perto de casa, sempre estou fazendo compras. Funcionários super educados. Alta qualidade dos produtos com muita qualidade e informações. Super recomendo. Excelente supermercado."
+				Juciel Oliveira.
+			<justify/>
+		</p>
+	</main>
+	<section id="productsection">
+		<h1>
+			Produtos
+		</h1>
+		<p>
+			Confira algum dos nossos produtos em oferta na BLACK FRIDAY!
+		</p>
+		<div id="productdiv">
+			<div class="productdiv">				
+				<img src="img/1.jpg" width="200">				
+				<div class="productdivdiv">
+					<div class="productdivdivdiv">
+						Preço:
+					</div>
+					5,29
+				</div>			
+			</div>
+			<div class="productdiv">				
+				<img src="img/2.jpg" width="200">				
+				<div class="productdivdiv">
+					<div class="productdivdivdiv">
+						Preço:
+					</div>
+					1,99
+				</div>
+			</div>
+			<div class="productdiv">
+				<img src="img/3.jpg" width="200">			
+				<div class="productdivdiv">
+					<div class="productdivdivdiv">
+						Preço:
+					</div>
+					4,99
+				</div>				
+			</div>
+			<div class="productdiv">
+				<img src="img/4.jpg" width="200">
+				<div class="productdivdiv">
+					<div class="productdivdivdiv">
+						Preço:
+					</div>
+					1,49
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="ord">
+		<section id="textsection">
+			<h1>
+			Encomendas
+			</h1>
+			<p>
+				Sua primeira vez pedindo produtos por aqui? Dê suas informações iniciais para fecharmos a encomenda:
+			</p>
+		</section>
+		<section id="ordsection">
+			<form name="orders" method="" action="">
+				<label for="name">
+					Nome:
+				</label>
+				<input id="name" type="text" name="name" placeholder="Coloque seu nome completo" size="80" required>
+				<label for="email">
+					E-mail:
+				</label>
+				<input id="email" type="email" name="email" placeholder="Ex: usuarioexemplo@email.com" size="100" required>
+				<div class="div">
+					<label for="product">
+					Produto(s):
+					</label>
+					<select id="product" name="product required">
+						<option value="">
+							Selecione
+						</option>
+						<option value="cookies">
+							Rosquinha Mabel 700g
+						</option>
+						<option value="beer">
+							Cerveja Antactica
+						</option>
+						<option value="bean">
+							Feijão Dona Dê Carioca
+						</option>
+						<option value="garlic">
+							Alho selecionado
+						</option>
+						<option value="plus">
+							Mais de 1 produto (Explicite-os no campo "Observações")
+						</option>
+					</select>
+				</div>
+				<div class="div">
+					<label for="qtt">
+						Quantidade:
+					</label>
+					<input id="qtt" type="number" name="qtt" step="1" min="1" max="100" required>
+				</div>
+				<fieldset>
+					<legend>
+						Forma retirada:
+					</legend>
+					<input id="form" type="radio" name="form" required value="del" required /> <label for="form">Delivery</label> <br/>
+					<input id="form" type="radio" name="form" required value="loc" required /> <label for="form">Retirar no local</label> <br/>
+				</fieldset>
+				<div id="textarea">
+					<label for="obs">
+						Observações:
+					</label>
+					<textarea id="obs" rows="5" cols="70" >
+					</textarea>
+				</div>
+				<section id="buttons">
+					<input type="submit" name="btn_srch" value="ENCOMENDAR">
+					<input type="reset" name="btn_rst" value="CANCELAR">
+				</section>
+			</form>
+		</section>
+	</section>
+	<footer>
+		Desenvolvido por <a id="a" target="_blank" href="https://www.instagram.com/mirovesaram/">Miromiro</a> - 2021
+	</footer>
+</body>
+</html>		 

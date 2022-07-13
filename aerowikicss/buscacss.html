@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="João Pedro" />
+		<meta name="keywords" content="aviação, avião, aeroporto, spotter, aeronáutica, gol, latam, azul, itapemirim, aero, aero, piloto, boeing, airbus, embraer" />
+		<meta name="description" content="Um acervo de dados, fontes, e informações relacionadas à aviação" />
+		<title>
+			AeroWiki
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<img src="img/Banner.png" alt="Banner contendo a logo do AeroWiki com um plano de tons azuis diversos" id="img0">
+		</header>
+		<center>
+			<nav>
+				<a href="#" class="class1">
+					Home
+				</a>
+				<a href="indexcss.html#abc" class="class1"> 
+					Cantinho dos aviões
+				</a>
+				<a href="#" class="class1">
+					Notícias
+				</a>
+				<a href="buscacss.html" class="class1"> 
+					Encontro de campos
+				</a> 
+				<a href="#" class="class1">
+					Vídeos
+				</a>
+			</nav>
+		</center>
+		<section class="searchpage">
+			<h1>Encontro dos campos de acesso importantes</h1>
+			<h2>Procura de aviões registrados:</h2>
+			<form name="models" method="" action="">
+				<label for="model">Modelo:</label>
+				<input id="model" type="text" name="model" placeholder="Digite o nome do modelo" required />
+				<input id="search" type="submit" name="btn_srch" value="Buscar">
+			</form>
+		</section>
+		<section class="searchpage">
+			<h2>Registre-se para ter acesso à comunidade:</h2>
+			<form name="register" method="" action="">
+				<label for="name">Nome:</label>
+				<input id="name" type="text" name="name" placeholder="Digite seu nome completo" required />
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" placeholder="Digite seu e-mail aqui (Ex: nomeusuario@email.com)" required>
+				<label for="psswrd">Senha:</label>
+				<input id="psswrd" type="password" name="psswrd" placeholder="Ex: abcd1234" required>
+				<p class="pform">Recomendado o uso de letras e números, além do mínimo de 8 caracteres</p>
+				<label for="nick">Apelido:</label>
+				<input id="nick" type="text" name="nick" placeholder="Ex: Miromiro" required>
+				<p class="pform" >É por ele que irão te conhecer</p>
+				<label for="tel">Telefone celular:</label>
+				<input id="tel" type="tel" name="tel" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" placeholder="(99)99999-9999">
+				<fieldset>
+					<legend>Seus interesses são:</legend>
+					<div>
+						<input id="avt" type="checkbox" name="avt" required value="mltr" /> <label for="avt">Aviação militar</label>
+					</div> 
+					<div>
+						<input id="avt" type="checkbox" name="avt" required value="com" /> <label for="avt">Aviação comercial</label>
+					</div>
+					<div>
+						<input id="avt" type="checkbox" name="avt" required value="pri" /> <label for="avt">Aviação privada</label>
+					</div> 
+					<div>
+						<input id="avt" type="checkbox" name="avt" required value="agri" /> <label for="avt">Aviação agrícola</label>
+					</div>
+				</fieldset>
+				<label for="msg">Biografia:</label>
+				<textarea id="msg" rows="5" cols="50">
+				</textarea>
+				<div class="buttons">
+					<input type="submit" name="btn_srch1" value="Registrar-se">
+					<input type="reset" name="btn_rst" value="Apagar">
+				</div>
+			</form>
+		</section>
+		<section class="searchpage">
+			<h2>Cantinho do spotter</h2>
+			<form name="spot" method="" action="">
+				<label for="spotter">Autoria:</label>
+				<input id="spotter" type="text" name="spotter" placeholder="Digite o nome/apelido do autor" required />	
+				<label for="modelspot">Modelo registrado:</label>
+				<input id="modelspot" type="text" name="modelspot" placeholder="Digite o nome do modelo registrado" required />
+				<div id="date-hour-num-form">
+					<div class="divdhn">
+						<label for="hour">Horário do registro:</label>
+						<input id="hour" type="time" name="hour" required />
+					</div>
+					<div class="divdhn">
+						<label for="date">Data do registro:</label>
+						<input id="date" type="date" name="date" required />
+					</div>
+					<div class="divdhn">
+						<label for="num">Quantidade de registros:</label>
+						<input id="num" type="number" name="num" min="1" max="100" step="1" />
+					</div>
+				</div>
+				<label for="area">De qual área o modelo é:</label>
+				<select id="area" name="area" required>
+					<option value="">Selecione</option>
+					<option value="cml">Comercial</option>
+					<option value="prv">Privado</option>
+					<option value="mil">Militar</option>
+					<option value="agr">Agrícola</option>
+				</select>
+				<fieldset>
+					<legend>Quantidade de motores:</legend>
+					<div>
+						<input id="qtt" type="radio" name="qtt" required value="mon" /> <label for="qtt">Monomotor</label>
+					</div>
+					<div>
+						<input id="qtt" type="radio" name="qtt" required value="bim" /> <label for="qtt">Bimotor</label>
+					</div> 
+					<div>
+						<input id="qtt" type="radio" name="qtt" required value="tri" /> <label for="qtt">Trimotor</label>
+					</div> 
+					<div>
+						<input id="qtt" type="radio" name="qtt" required value="qua" /> <label for="qtt">Quadrimotor</label>
+					</div> 
+					<div>
+						<input id="qtt" type="radio" name="qtt" required value="plus" /> <label for="qtt">Mais de quatro motores</label>
+					</div>
+				</fieldset>			
+				<div class="buttons">
+					<input type="submit" name="btn_srch2" value="Publicar">
+					<input type="reset" name="btn_rst1" value="Apagar">
+				</div>
+			</form>
+		</section>
+		<footer>		
+			<p> 
+				Desenvolvido por <a target="_blank" href="https://www.instagram.com/aero.wiki/" class="class2">João Pedro</a> (2021)
+			</p>
+		</footer>
+	</body>
+</html>
