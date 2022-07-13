@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <title>Kimono Estampado Floral Yawanawa</title>
+         <meta charset="utf-8"/>
+         <meta name="author" content="Eduardo Airon e MiroMiro"/>
+         <meta name="keyworlds" content="roupa, kimono, vestimenta leve e confortável, salvior, verão"/>
+         <meta name="description" content="Venda de roupas confortáveis e leves"/>
+         <link rel="stylesheet" type="text/css" href="estilo.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&display=swap">
+	</head>
+    <body>
+        <header>
+            <div id="salvior">
+                <a href="#" id="a-salvior">
+                    Salvior
+                </a>
+            </div> 
+            <section id="container-carrinho">
+                <div>
+                    <img src="img/yawanawa.jpeg" class="card2">
+                    <div id="card-content2">
+                        <p class="p">R$314,10</p>
+                        <p>Kimono estampado floral yawanawa</p>
+                        <p>Produto: 0002</p>
+                        <p>Chave pix: e-mail</p>
+                    </div>  
+                </div>
+            </section>
+        </header>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <form  id="blocos" method="get" action="">
+            <div id="bloco1">
+                <p>
+                <label for="nome">Nome:</label>
+                </p>
+                <input id="nome" type="text" placeholder="Digite seu nome" required/>
+                <p>
+                    <label for="email">E-mail:</label>
+                </p>
+                <input id="email" type="text" placeholder="Digite seu e-mail" required/>
+                <p>
+                    <label for="number"> Número:</label>
+                </p>
+                <input id="number" type="tel" name="number" size="20" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?|$"/>
+                <p>
+                    <label for="cpf">CPF:</label>
+                </p>
+                <input for="cpf" type="text" placeholder="000.000.000-00">
+            </div>
+            <div id="bloco2">
+                <p>
+                <label for="cep">CEP:</label>
+                </p>
+                <input id="cep" type="text" placeholder="00000-000" required/>
+                <p>
+                    <label for="logradouro">Logradouro</label>
+                </p>
+                <input id="logradouro" type="text" required/>
+                <p>
+                    <label for="numero">Número:</label>
+                </p>
+                <input id="numero" type="text" placeholder="Caso sem número, digite somente 0"/>
+                <p>
+                    <label for="complemento">Complemento:</label>
+                </p>
+                <input id="complemento" type="text"/>
+                <p>
+                    <label for="bairro">Bairro:</label>
+                </p>
+                <input id="bairro" type="text" required/>
+                <p>
+                    <label for="uf">Estado:</label>
+                </p>
+                <select id="uf">
+                    <option value="Selecione">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div> 
+            <div id="bloco3">
+                <p>
+                <label for="tamanho">Tamanho:</label>
+                </p>
+                <select id="tamanho">
+                    <option value="Selecione">Selecione</option>
+                    <option value="PP">Tamanho PP</option>
+                    <option value="P">Tamanho P</option>
+                    <option value="M">Tamanho M</option>
+                    <option value="G">Tamanho G</option>
+                </select>
+                <p>
+                    <label for="observações">Observações:</label>
+                </p>
+                <textarea id="observações" cols="30" rows="3"></textarea>
+            </div>
+            <div id="bloco4">
+                <div id="submit">
+                    <a href="compra-aprovada.html">
+                    <input type="submit" name="bnt-confimar" value="Confirmar">
+                    </a>
+                </div>
+                <div id="reset">
+                    <a href="vestuario.html">
+                    <input type="reset" name="bnt-cancelar" value="Cancelar">
+                    </a>
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript">
+            $("#cep").focusout(function(){
+                $.ajax({
+                    url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+                    dataType: 'json',
+                    success: function(resposta){
+                        $("#logradouro").val(resposta.logradouro);
+                        $("#complemento").val(resposta.complemento);
+                        $("#bairro").val(resposta.bairro);
+                        $("#cidade").val(resposta.localidade);
+                        $("#uf").val(resposta.uf);
+                        $("#numero").focus();
+                    }
+                });
+            });
+        </script>
+        <section id="botao">
+                <a href="#">
+                    <img id="seta" src="img/up-arrow.png">
+                </a>
+        </section>
+        <footer> 
+            <p id="desenvolvedores"> 
+                Desenvolvido por 
+                <a class="a-rodape" href="https://www.instagram.com/eduxrdx.exe" target="_blank">
+                    Eduardo
+                </a>
+                e 
+                <a class="a-rodape" href="https://www.instagram.com/mirovesaram/" target="_blank">
+                    MiroMiro
+                </a>
+                - 2022
+            </p>
+        </footer>
+    </body>
+</html>
